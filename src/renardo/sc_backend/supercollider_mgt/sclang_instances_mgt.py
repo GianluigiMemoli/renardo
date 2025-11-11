@@ -30,7 +30,7 @@ class SupercolliderInstance:
                 sclang_path = sc_dir / "sclang.exe"
                 #self.sclang_exec = [str(sclang_path), str(SC_USER_CONFIG_DIR / 'start_renardo.scd')]
                 self.sclang_exec = [str(sclang_path), '-i', 'scqt']
-                self.check_exec = [str(sclang_path), '-version']
+                self.check_exec = [str(sclang_path), '--version']
                 
                 # Path to the SuperCollider IDE application on Windows
                 self.sc_app_path = sc_dir / "scide.exe"
